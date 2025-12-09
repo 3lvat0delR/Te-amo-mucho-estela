@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estela Rodriguez</title>
+  <link rel="icon" type="image/png" href="img/corazon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-image: url('img/twice.jpg'); /* imagen pequeña que se repite */
+      --overlay: rgba(20,20,26,0.35); /* opacidad sutil */
+      --text: #000;
+      --accent: #ff89a5;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;
+      color:var(--text);
+      background-image: var(--bg-image);
+      background-repeat: repeat;
+      background-size: auto;
+      position: relative;
+    }
+    /* overlay */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background: var(--overlay);
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .wrap{
+      min-height:100dvh;
+      display:grid;
+      place-items:center;
+      padding:24px;
+      position:relative;
+      z-index:1;
+    }
+    .card{
+      width:min(720px,92vw);
+      border-radius:28px;
+      padding:48px 32px;
+      backdrop-filter: blur(8px) saturate(120%);
+      background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+      text-align:center;
+      animation: pop 700ms cubic-bezier(.2,.9,.3,1) both;
+    }
+    @keyframes pop{
+      from{opacity:0; transform:translateY(24px) scale(.98)}
+      to{opacity:1; transform:translateY(0) scale(1)}
+    }
+    h1{
+      margin:0 0 12px;
+      font-weight:800;
+      letter-spacing:.4px;
+      font-size: clamp(28px,6vw,42px);
+    }
+    p{margin:0 0 24px; opacity:.9}
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      padding:14px 22px;
+      border-radius:16px;
+      color:#0d0d10;
+      background: linear-gradient(135deg, #ffd1e1, #ffb7ce 40%, #ffcbe7);
+      box-shadow: 0 12px 32px rgba(255,137,165,0.35);
+      border:0;
+      font-weight:700;
+      letter-spacing:.3px;
+      cursor:pointer;
+      transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+    }
+    .cta:hover{ transform: translateY(-2px); filter:saturate(115%); box-shadow: 0 16px 40px rgba(255,137,165,0.45); }
+    .cta:active{ transform: translateY(0) scale(.99); }
+
+    .badge{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      font-size:12px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.26);
+      margin-bottom:16px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <span class="badge">Para la chica que mas amo en este mundo</span>
+      <h1>💕 Para ti mi amor 💕</h1>
+      <p>
+        La verdadera belleza de la vida es el inmenso placer
+        de saber que la compartire contigo. Y estare muy feliz
+        y orgulloso de que sea contigo a mi lado.
+      </p>
+      <button class="cta" onclick="location.href='carousel.html'">
+        ❤ Presiona Aqui ❤
+        <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h12M13 5l7 7-7 7" stroke="#2b2b35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg> -->
+      </button>
+    </section>
+  </main>
+</body>
+</html>

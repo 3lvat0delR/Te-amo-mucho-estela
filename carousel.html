@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estela Rodriguez</title>
+  <link rel="icon" type="image/png" href="img/corazon.png" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="back">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      Volver
+    </a>
+    <h1>Amarte es la mejor parte de mi día.</h1>
+  </header>
+
+  <main class="carousel-wrap">
+    <section class="carousel" aria-label="Lovely TWICE Carousel">
+      <!-- Indicators -->
+      <div class="dots" role="tablist" aria-label="Indicadores del carrusel">
+        <button class="dot" aria-label="Ir al 1" data-goto="0"></button>
+        <button class="dot" aria-label="Ir al 2" data-goto="1"></button>
+        <button class="dot" aria-label="Ir al 3" data-goto="2"></button>
+        <button class="dot" aria-label="Ir al 4" data-goto="3"></button>
+        <button class="dot" aria-label="Ir al 5" data-goto="4"></button>
+        <button class="dot" aria-label="Ir al 6" data-goto="5"></button>
+        <button class="dot" aria-label="Ir al 7" data-goto="6"></button>
+        <button class="dot" aria-label="Ir al 8" data-goto="7"></button>
+        <button class="dot" aria-label="Ir al 9" data-goto="8"></button>
+      </div>
+
+      <!-- Nav arrows -->
+      <button class="nav prev" aria-label="Anterior">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button class="nav next" aria-label="Siguiente">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Stack container: shows next behind current -->
+      <div class="stack" id="stack">
+        <!-- 9 articles -->
+        <!-- Card 1 -->
+        <article class="card" data-index="0" data-color="sky">
+          <div class="corner">
+            <img src="img/1.png" alt="Decoración" />
+          </div>
+          <header class="card-head">
+            <h2>Todo cambio cuando te conoci</h2>
+            <span class="tag">Lovely Sky</span>
+          </header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Eres Tu.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Eres Tu: </strong></span> 
+                  Cuando nos conocimos, senti algo que es dificil de explicar, como si
+                  antes ya te hubiera conocido fue extraño pero a la vez lindo, y saber
+                  que tengo la suerte de que tu me quieras, me siento muy feliz de que 
+                  alguien como tu me ame. Tal vez no sea el mejor, pero tu me inspiras 
+                  a ser mejor cada dia, sacas lo mejor de mi, es lo que mas disfruto de
+                  pasar tiempo contigo, no me importa si es atraves de una pantalla o 
+                  frente a ti, lo unico que se, es que cuando llegaste a mi vida todo
+                  adquirio un nuevo color en mi vida, antes no tenia planes a futuro, no
+                  me importaba nada, pero ahora que estas tu siempre estoy pensando en
+                  mi futuro, en el nuestro, pues no sabes con cuantas ganas quiero que seas
+                  tu. Te Amo Mucho Estela ❤
+                </p>
+                <!-- <img src="img/twice.jpg" alt="Imagen 1" /> -->
+              </div>  
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-index="1" data-color="green">
+          <div class="corner"><img src="img/2.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>Te amo tal y como eres</h2><span class="tag">Lovely Green</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Staring.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Me encantas:</strong></span>
+                  Me encantas tal y como eres, y lo sabes, tal vez para ti es extraño
+                  que en las videollamadas te mire con tal detinimiento pero no lo puedo
+                  evitar, entre mas te miro mas me enamoro de ti, nunca cambies Estela,
+                  lo que me enamoro fue tu forma de ser. Me tienes mirandote como tonto,
+                  solo tu tienes toda mi atencion. Amo ver esos ojos tan hermosos y los 
+                  amare muchos mas cuando pueda verlos frente a frente.
+                </p>
+                <p>
+                  He contado los dias para poder verte, estoy tan emocionado de que vengas,
+                  me siento feliz, prometo que siempre te amare y jamas me cansare de verte 
+                  solo a ti, tu captas toda mi atencion, simplemente te adoro, si tan solo 
+                  puedieras verte con mis ojos entenderias el porque eres tan importante para
+                  mi, con solo verte me alegro.
+                </p>
+                <p>
+                  <em>Mi foto favorita tuya, esos hermoso ojos que tienes</em>
+                </p>
+                <img src="img/eyes.jpg" alt="Imagen 2" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" data-index="2" data-color="pink">
+          <div class="corner"><img src="img/3.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>Un futuro juntos</h2><span class="tag">Lovely Pink</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Contigo.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Estare siempre contigo:</strong></span>
+                  Tal vez parezca exagerado o me adelante demasiado pero yo quiero estar 
+                  contigo a partir de ahora, casarme contigo, formar una familia juntos,
+                  ser solo tu y yo. Hare todo de mi parte para que esto sea posible, mi
+                  meta de vida es estar junto a ti, no me rendire y cada dia te demostrare
+                  lo mucho que te amo. Tal vez no seamos la pareja perfecta, eso no existe 
+                  pero si seremos una pareja lleno de amor, tu vales la pena, vales el
+                  esfuerzo, seria un tonto si dejara ir a alguien tan increible como tu.
+                </p>
+                <p>
+                  Dia y noche pasas por mis pensamientos y cada vez que lo haces me sacas una
+                  sonrisa, una sonrisa sincera y llena de amor al recordar que tengo a alguien
+                  que hace que despedirme sea dificl porque siempre quisiera escuchar tu voz,
+                  yo estoy para ti siempre no importa el que, o el cuando. Te amo mucho
+                </p>
+                <p><em>Ame esto que escribiste para mi... Atesoro mucho esto ❤</em></p>
+                <img src="img/txt.jpg" alt="Imagen 3" />
+              </div>  
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" data-index="3" data-color="purple">
+          <div class="corner"><img src="img/4.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>Mi amor por ti es sincero</h2><span class="tag">Lovely Purple</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Eternos.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Sanemos juntos:</strong></span> 
+                  Tu y yo sabemos que hemos pasado por cosas que nos han marcado de
+                  cierta manera, por esta razon te tengo una propuesta; que sanemos
+                  juntos, me has dicho que te importa mas como me siento yo a como te
+                  sientes tu, pero estoy en desacuerdo, para mi, lo que tu sientas, 
+                  pienses o te pase me importan mucho. <strong>Tu me importas mucho</strong>
+                </p>
+                <p>
+                  Tal vez puedas tener dudas de mis intenciones contigo, y eso es algo
+                  normal, yo se que esto puede tomar tiempo, pero estoy dispuesto a esperar
+                  ese tiempo para poder amarte de manera completa, ya te lo he dicho; 
+                  <em>Las mejores cosas llevan tiempo.</em> Y lo nuestro llevara tiempo
+                  porque sera algo muy hermoso. Contigo yo quiero vivir cada proceso de 
+                  nuestra relacion, voy a disfrutarlas como no tienes idea, seran de
+                  las mejores cosas que me pasaran en la vida.
+                </p>
+                <!-- <img src="assets/img4.jpg" alt="Imagen 4"/> -->
+              </div>  
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card" data-index="4" data-color="orange">
+          <div class="corner"><img src="img/5.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>No te decepcionare</h2><span class="tag">Lovely Orange</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Hacer Bien.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Disculpame:</strong></span> 
+                  Te quiero pedir disculpas si en algun momento hice o dije algo que te
+                  llegara a lastimar, yo jamas tendre la intencion de hacerte daño, jamas.
+                  Tu te mereces lo mejor, todo lo bueno de mi tu ya dueña eres, y te
+                  agradezco por tenerme la paciencia ajjajaja, Pero quiero dejarte en 
+                  claro que nunca seria capaz de hacerte daño con intencion y si llego a
+                  cometer mas errores. Quiero que sepas que hare lo necesario para
+                  enmendar esos errores.
+                </p>
+                <p>
+                  Yo quiero cuidarte y amarte de la manera mas sincera posible, no te 
+                  quiero decepcionar, por primera vez puedo decir que encontre a alguien 
+                  que vale la pena, no habra dia en que no te quiera demostrarte todo el 
+                  amor que por ti yo siento.
+                </p>
+                <p>
+                  <em>
+                    Eu amo-te muito, minha vida, és a luz da minha vida e conto os dias 
+                    para te ver e nos amarmos sinceramente.
+                  </em>
+                </p>
+                <img src="img/carta.jpg" alt="Imagen 5" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card" data-index="5" data-color="cyan">
+          <div class="corner"><img src="img/6.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>Nuestro amor a distancia</h2><span class="tag">Lovely Cyan</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Te quiero.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Nuestro Amor a Distancia:</strong></span><br>
+                  En cada amanecer te pienso, como si el sol llevara tu nombre, y en cada noche te sueño, como si la luna guardara tu rostro.
+                  La distancia no es un muro, es un puente invisible de fe, donde tus palabras viajan ligeras y mis suspiros te alcanzan también.
+                  Somos dos almas que se buscan, dos estrellas que brillan sin cesar, aunque el cielo nos tenga separados, la eternidad nos volverá a juntar.
+                  Un día los relojes callarán, y tus manos serán mi destino, entonces el futuro será nuestro hogar, y el amor, eterno, nuestro camino.
+                </p>
+                <p>
+                  <span><strong>Estar Contigo:</strong></span><br>
+                  Estar contigo es un milagro sencillo, un instante que se vuelve eternidad, cada gesto tuyo ilumina mi camino, cada palabra tuya me da paz.
+                  Jamás me cansaría de tu presencia, ni un segundo sería rutina, porque en tu sonrisa vive la esperanza, y en tu voz florece la vida.
+                  Haría todo por verte feliz, por cuidar la luz que brilla en tus ojos, por arrancar de tu alma las sombras, y regalarte siempre amaneceres rojos.
+                  Tu risa es música que me envuelve, tu mirada, refugio donde quiero estar, y en cada momento junto a ti descubro, que el amor verdadero nunca deja de brillar.
+                </p>
+                <!-- <img src="img/poema.png" alt="Imagen 6" /> -->
+              </div>  
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card" data-index="6" data-color="white">
+          <div class="corner"><img src="img/7.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>Siempre espero un mensaje tuyo</h2><span class="tag">Lovely White</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Chachacha.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Adoro cuando me llega un mensaje tuyo:</strong></span> 
+                  Siempre que suena esa notificacion tuya, me emociono, guardo tantos mensajes tuyos
+                  por las cosas tan lindas que tu me dices, yo se que, a pesar de que pase el tiempo
+                  tu y yo no amaremos como si fuese la primera vez, y ahnelo el dia en que todas esas
+                  cosas lindas que nos decimos, lo haremos mientras estemos tomados de la mano.
+                  <em><strong>Yo seria feliz con estar a tu lado y mirarte toda la noche...</strong></em>
+                  jamas me cansare de ver ese rostro tan lindo que tienes, eres hermosa y tienes un 
+                  lugar muy especial en mi corazón...
+                </p>
+                <p><em>Uno de mis mensajes favoritos tuyos</em></p>
+                <img src="img/mensaje.jpg" alt="Imagen 7" />
+              </div>
+            </div>           
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card" data-index="7" data-color="red">
+          <div class="corner"><img src="img/8.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>Disfrutare estar contigo</h2><span class="tag">Lovely Red</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Disfruto.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  <span><strong>Disfruto hablar contigo:</strong></span> 
+                  Tal vez ya lo he dicho muchas veces pero las veces que lo haga no son las suficientes,
+                  disfruto pasar tiempo contigo, te has vuelto alguien muy importante en mi vida, tu me 
+                  traes loco, loco de amor, quiero compartir toda mi vida contigo, no sabes lo impaciente
+                  que estoy por comenzar una vida juntos. Si me siento impaciente por esto es porque:
+                </p>
+                <p>
+                  <em>
+                    Cuando te das cuenta de que quieres pasar el resto de tu vida con alguien, quieres que 
+                    el resto de tu vida empiece lo antes posible.
+                  </em>
+                </p>
+                <p>
+                  Me voy a sentir muy feliz y orgulloso de poder decir que tu Estela Naomy Rodriguez, eres
+                  mi novia y que siempre estare para ti, te cuidare, te amare, estare para ti en las buenas
+                  en las malas y en las peores. Si tu caes te levantare y si no puedo hacerlo me caere contigo
+                  hasta que podamos levantarnos juntos. Te amo mucho.
+                </p>
+                <!-- <img src="assets/img8.jpg" alt="Imagen 8" /> -->
+              </div>
+            </div>            
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="card" data-index="8" data-color="blue">
+          <div class="corner"><img src="img/9.png" alt="Decoración" /></div>
+          <header class="card-head"><h2>15 de Diciembre 2025</h2><span class="tag">Lovely Blue</span></header>
+          <div class="card-body">
+            <div class="scroll-content">
+              <button class="play" data-audio="audio/Bird.mp3">Play</button>
+              <audio preload="none"></audio>
+              <div class="reveal">
+                <p>
+                  Ya casi es 15 de Diciembre y por fin tendre el gusto de conocerte, ya lo he dicho antes pero
+                  me muero de ganas por caminar juntos de la mano, darte un abrazo para transmitirte todo el 
+                  amor que por ti yo siento, mirarte a los ojos y decirte lo mucho que te amo, acariciar tu bella
+                  cara, tal vez aveces me pase de empalagoso pero <em>Amor</em> es una palabra muy débil para 
+                  describir lo que siento por ti. 
+                </p>
+                <p>
+                  Lo unico malo que habra cuando te conozca sera que, cuando te tengas que ir, me voy a sentir muy
+                  triste pero a la vez emocionado por la proxima vez que vengas, que bonito regalo de navidad tendre,
+                  ese regalo sera poder conocerte. Y cuando llegue el dia en el que tengas que regresarte yo estare 
+                  esperando por ti, por poder volver a estar contigo, esperare el tiempo necesario. Mientras espero 
+                  por tu llegada. 
+                </p>
+                <!-- <img src="assets/img9.jpg" alt="Imagen 9" /> -->
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

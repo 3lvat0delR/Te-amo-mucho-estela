@@ -1,0 +1,9 @@
+Crea una pagina web con las siguientes caractericas el inicio sera un boton que al ser presionado aparecera lo siguiente: (la pagina del boton sera index y al ser presionado mande a otra pagina)
+
+9 articles con estilos en carrusel centrado con botones para avanzar al siguiente article (card), y que de color de fondo tengan los colores de las lovely de twice, con estilos bonitos repito. 
+
+cada article tendra lo siguiente: con estilos bonitos que tenga solo un boton (que diga play) que al presionarse se reproduzca una cancion y aparezca texto (etiquetas p, span etc, yo coloco el texto que saldra) e imagenes. que el carrusel este de forma que se pueda ver el siguiente article (no un overflow sino que se vea detras el siguiente card como flotante detras del article actual, usa la imagen que te di como referencia) y que el carrusel tenga los botones para avanzar a la siguiente card, y que el article en la esquina tenga ina imagen flotante ajusta el tamaño para que sea pequeña la imagen o se ajuste a la esquina del article. 
+
+que el fondo de la pagina sea una imagen que se repita ya que es pequeña y sea un poco opaco el fondo no mucho. 
+
+dame el html, css y js de forma separada, que tenga estilos muy bonitos, animaciones y sea completamente responsiva. con estilos bonitos repito
