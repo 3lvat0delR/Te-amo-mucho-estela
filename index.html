@@ -94,6 +94,18 @@
       margin-bottom:16px;
     }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        document.body.innerHTML = `
+          <div style="display:flex;justify-content:center;align-items:center;min-height:100vh;
+                      background:#ffb6b3;color:#1b1b22;font-size:20px;font-weight:600;text-align:center;">
+            📵 Abrelo desde una laptop o computadora >:( jajajajaj
+          </div>`;
+      }
+    });
+  </script>
 </head>
 <body>
   <main class="wrap">
